@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 # Memuat dataset
-df = pd.read_csv('missing-value/train-cleaned-missing-value.csv')
+df = pd.read_csv('../missing-value/train-cleaned-missing-value.csv')
 
 # Mengidentifikasi kolom numerik, kecuali PassengerId dan Survived
 numerical_cols = [col for col in df.select_dtypes(include=['number']).columns
